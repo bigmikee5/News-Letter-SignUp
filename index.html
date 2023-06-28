@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Letter Sign Up</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,600;1,700&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="subscriptionPage">
+      <div class="container">
+        <div class="mobileImg">
+          <img src="./images/illustration-sign-up-mobile.svg" class="mobile" />
+        </div>
+        <div class="deskstopImg">
+          <img
+            src="./images/illustration-sign-up-desktop.svg"
+            class="deskstop"
+          />
+        </div>
+        <div class="contents">
+          <h2>Stay updated!</h2>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form>
+            <span class="title">Email address</span>
+            <span id="errorMessage"></span>
+            <div class="emailDiv">
+              <input
+                type="email"
+                id="email"
+                placeholder="email@company.com"
+                required
+              />
+            </div>
+            <button id="subscribe" onclick="subscribeBtn()">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="dismissalPage">
+      <div class="dismissMessage">
+        <div class="success">
+          <img src="./images/icon-success.svg" class="check" />
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <span>ash@loremcompany.com</span> Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <button type="submit" id="dismiss" onclick="dismiss()">
+            Dismiss message
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
